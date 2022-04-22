@@ -27,6 +27,7 @@ Then we start Kubernetes dashboard:
 ``$ minikube dashboard -p my-cluster``
 
 the Odoo service defined in the bitnami chart is of type ``LoadBalancer``, so we need to run the following command to be able to access the Odoo url:
+
 ``$ minikube tunnel -p my-cluster``
 
 .. _Odoo: https://www.odoo.com/
@@ -62,4 +63,4 @@ Now if you want to run a new instance of Odoo inside your Kubernetes run the fol
 ``$ helm install fshahy ./odoo-21.2.8.tgz``
 
 note that I used ``fshahy`` as my installation name.
-Off course you can use any other nameand have multiple instances od Odoo running inside your Kubernetes.
+Off course you can use any other name and have multiple instances of Odoo running inside your Kubernetes.
