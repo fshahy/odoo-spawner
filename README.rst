@@ -3,6 +3,7 @@ odoo-spawner
 If you want to deploy Odoo_ inside Kubernetes_ (minikube) and have **multiple** instance of it inside your cluster follow this instructions.
 I am using Odoo community edition chart provided by bitnami_.
 
+
 **requirements**
 
 You need to install the following before we can start.
@@ -29,7 +30,7 @@ the Odoo service defined in the bitnami chart is of type ``LoadBalancer``, so we
 .. _minikube: https://minikube.sigs.k8s.io/docs/start/
 .. _kubectl: https://kubernetes.io/docs/tasks/tools/
 .. _helm: https://helm.sh/docs/intro/install/
-.. _bitnami: https://bitnami.com/stack/odoo/helmclone the repository containging the Odoo chart:
+.. _bitnami: https://bitnami.com/stack/odoo/helm
 
 1. clone the repository containging the Odoo chart:
 ``git clone https://github.com/bitnami/charts.git``
