@@ -1,16 +1,21 @@
 odoo-spawner
 ====
-If you want to deploy Odoo_ inside Kubernetes_ (minikube) and have **multiple** instance of it inside your cluster follow this instructions.
+If you want to deploy Odoo_ inside Kubernetes_ (minikube) and have **multiple** instances of it inside your cluster follow this instructions.
 I am using Odoo community edition chart provided by bitnami_.
 
 
 **requirements**
 
 You need to install the following before we can start.
+
 * Install Docker_
+
 * Install minikube_
+
 * Install kubectl_
+
 * Install helm_
+
 
 After installing the required software we need to create a new Kubernetes cluster:
 
