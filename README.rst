@@ -4,6 +4,7 @@ If you want to deploy Odoo_ inside Kubernetes_ (minikube) and have **multiple** 
 I am using Odoo community edition chart provided by bitnami_.
 
 **requirements**
+
 You need to install the following before we can start.
 * Install Docker_
 * Install minikube_
@@ -11,10 +12,14 @@ You need to install the following before we can start.
 * Install helm_
 
 After installing the required software we need to create a new Kubernetes cluster:
+
 ``minikube start --profile my-cluster``
+
 here I named it ``my-cluster`` but you can use your own.
 Then we start Kubernetes dashboard:
+
 ``minikube dashboard -p my-cluster``
+
 the Odoo service defined in the bitnami chart is of type ``LoadBalancer``, so we need to run the following command to be able to access the Odoo url:
 ``minikube tunnel -p my-cluster``
 
@@ -44,6 +49,5 @@ depending on the current version of the chart it will create a file named like t
 Now if you want to run a new instance of Odoo inside your Kubernetes run the following command:
 ``helm install fshahy ./odoo-21.2.8.tgz``
 
-Finally
 note that I used ``fshahy`` as my installation name.
 Off course you can use any other nameand have multiple instances od Odoo running inside your Kubernetes.
